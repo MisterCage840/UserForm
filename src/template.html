@@ -8,5 +8,37 @@
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <form action="">
+      <div class="emailContainer">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" required id="email" />
+      </div>
+      <div class="countryContainer">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="selectCountry">Select a country</option>
+        </select>
+      </div>
+      <div class="zipContainer">
+        <label for="zipCode">ZipCode:</label>
+        <input
+          type="text"
+          name="zipCode"
+          id="zipCode"
+          pattern="^\d{5}(-\d{4})?$"
+          required
+        />
+      </div>
+      <div class="passContainer">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div class="confirmContainer">
+        <label for="confirmPass">Confirm Password:</label>
+        <input type="password" name="confirmPass" id="confirmPass" required />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
